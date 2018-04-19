@@ -6,7 +6,7 @@
 
 This small macOS app runs in the status bar and allows to quickly enable or disable the microphone sytem-wise.
 
-Quitting the app can be done by riglt-clicking the icon and selecting _Quit_.
+Quitting the app can be done by right-clicking the icon and selecting _Quit_.
 
 
 ## Installation
@@ -16,5 +16,5 @@ To install, download the project, open in Xcode, archive and export app to the D
 
 ## Credits
 
-* [https://fontawesome.com]() for the icons
-* [https://stackoverflow.com]() for the support ❤️
+* <https://fontawesome.com> for the icons
+* <https://stackoverflow.com> for the support ❤️
