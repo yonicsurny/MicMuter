@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A8FE69C2085F61D00DC0331 /* StatusMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8FE69B2085F61D00DC0331 /* StatusMenu.swift */; };
+		0A8FE69E2085FDC000DC0331 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8FE69D2085FDC000DC0331 /* StatusView.swift */; };
+		0A8FE6A02086115800DC0331 /* AboutWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8FE69F2086115800DC0331 /* AboutWindow.swift */; };
+		0AF25FF12084CCAA003DD162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF25FF02084CCAA003DD162 /* AppDelegate.swift */; };
+		0AF25FF32084CCAB003DD162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF25FF22084CCAB003DD162 /* Assets.xcassets */; };
+		0AF25FF62084CCAB003DD162 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF25FF42084CCAB003DD162 /* MainMenu.xib */; };
+		0AF25FFF2084D3D5003DD162 /* NSImage+MicMuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF25FFE2084D3D5003DD162 /* NSImage+MicMuter.swift */; };
+		0AF2600A208520AC003DD162 /* MicrophoneService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF26009208520AC003DD162 /* MicrophoneService.swift */; };
+		0AF2600C20852154003DD162 /* ThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2600B20852154003DD162 /* ThemeService.swift */; };
+		0AF2600F20852216003DD162 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2600E20852216003DD162 /* Localizable.swift */; };
+		0AF2601320852263003DD162 /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2601220852263003DD162 /* String+Localizable.swift */; };
+		0AF2601420852341003DD162 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2601620852341003DD162 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A8FE69B2085F61D00DC0331 /* StatusMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenu.swift; sourceTree = "<group>"; };
+		0A8FE69D2085FDC000DC0331 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		0A8FE69F2086115800DC0331 /* AboutWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindow.swift; sourceTree = "<group>"; };
+		0AF25FED2084CCAA003DD162 /* MicMuter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicMuter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF25FF02084CCAA003DD162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0AF25FF22084CCAB003DD162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AF25FF52084CCAB003DD162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0AF25FF72084CCAB003DD162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF25FF82084CCAB003DD162 /* MicMuter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MicMuter.entitlements; sourceTree = "<group>"; };
+		0AF25FFE2084D3D5003DD162 /* NSImage+MicMuter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+MicMuter.swift"; sourceTree = "<group>"; };
+		0AF26009208520AC003DD162 /* MicrophoneService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneService.swift; sourceTree = "<group>"; };
+		0AF2600B20852154003DD162 /* ThemeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeService.swift; sourceTree = "<group>"; };
+		0AF2600E20852216003DD162 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		0AF2601220852263003DD162 /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		0AF2601720852356003DD162 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0AF26018208523AF003DD162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AF25FEA2084CCAA003DD162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A8FE69A2085F60900DC0331 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0A8FE69B2085F61D00DC0331 /* StatusMenu.swift */,
+				0A8FE69D2085FDC000DC0331 /* StatusView.swift */,
+				0A8FE69F2086115800DC0331 /* AboutWindow.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		0AF25FE42084CCAA003DD162 = {
+			isa = PBXGroup;
+			children = (
+				0AF25FEF2084CCAA003DD162 /* MicMuter */,
+				0AF25FEE2084CCAA003DD162 /* Products */,
+				0AF260042084D663003DD162 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0AF25FEE2084CCAA003DD162 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AF25FED2084CCAA003DD162 /* MicMuter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AF25FEF2084CCAA003DD162 /* MicMuter */ = {
+			isa = PBXGroup;
+			children = (
+				0A8FE69A2085F60900DC0331 /* Features */,
+				0AF2600720851F87003DD162 /* Extensions */,
+				0AF2600D208521DD003DD162 /* Localization */,
+				0AF2600820851F9D003DD162 /* Services */,
+				0AF25FF02084CCAA003DD162 /* AppDelegate.swift */,
+				0AF25FF22084CCAB003DD162 /* Assets.xcassets */,
+				0AF25FF42084CCAB003DD162 /* MainMenu.xib */,
+				0AF25FF72084CCAB003DD162 /* Info.plist */,
+				0AF25FF82084CCAB003DD162 /* MicMuter.entitlements */,
+			);
+			path = MicMuter;
+			sourceTree = "<group>";
+		};
+		0AF260042084D663003DD162 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AF2600720851F87003DD162 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0AF25FFE2084D3D5003DD162 /* NSImage+MicMuter.swift */,
+				0AF2601220852263003DD162 /* String+Localizable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0AF2600820851F9D003DD162 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0AF26009208520AC003DD162 /* MicrophoneService.swift */,
+				0AF2600B20852154003DD162 /* ThemeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0AF2600D208521DD003DD162 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				0AF2601620852341003DD162 /* Localizable.strings */,
+				0AF2600E20852216003DD162 /* Localizable.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AF25FEC2084CCAA003DD162 /* MicMuter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF25FFB2084CCAB003DD162 /* Build configuration list for PBXNativeTarget "MicMuter" */;
+			buildPhases = (
+				0AF25FE92084CCAA003DD162 /* Sources */,
+				0AF25FEA2084CCAA003DD162 /* Frameworks */,
+				0AF25FEB2084CCAA003DD162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicMuter;
+			productName = MicMutter;
+			productReference = 0AF25FED2084CCAA003DD162 /* MicMuter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AF25FE52084CCAA003DD162 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Aelptos;
+				TargetAttributes = {
+					0AF25FEC2084CCAA003DD162 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = 0AF25FE82084CCAA003DD162 /* Build configuration list for PBXProject "MicMuter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = 0AF25FE42084CCAA003DD162;
+			productRefGroup = 0AF25FEE2084CCAA003DD162 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AF25FEC2084CCAA003DD162 /* MicMuter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AF25FEB2084CCAA003DD162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF25FF32084CCAB003DD162 /* Assets.xcassets in Resources */,
+				0AF2601420852341003DD162 /* Localizable.strings in Resources */,
+				0AF25FF62084CCAB003DD162 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AF25FE92084CCAA003DD162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF25FF12084CCAA003DD162 /* AppDelegate.swift in Sources */,
+				0AF2600C20852154003DD162 /* ThemeService.swift in Sources */,
+				0A8FE69E2085FDC000DC0331 /* StatusView.swift in Sources */,
+				0AF2600F20852216003DD162 /* Localizable.swift in Sources */,
+				0A8FE69C2085F61D00DC0331 /* StatusMenu.swift in Sources */,
+				0A8FE6A02086115800DC0331 /* AboutWindow.swift in Sources */,
+				0AF2600A208520AC003DD162 /* MicrophoneService.swift in Sources */,
+				0AF25FFF2084D3D5003DD162 /* NSImage+MicMuter.swift in Sources */,
+				0AF2601320852263003DD162 /* String+Localizable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0AF25FF42084CCAB003DD162 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AF25FF52084CCAB003DD162 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		0AF2601620852341003DD162 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AF2601720852356003DD162 /* fr */,
+				0AF26018208523AF003DD162 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AF25FF92084CCAB003DD162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0AF25FFA2084CCAB003DD162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0AF25FFC2084CCAB003DD162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MicMuter/MicMuter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JN659VVZPZ;
+				INFOPLIST_FILE = "$(SRCROOT)/MicMuter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aelptos.MicMuter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		0AF25FFD2084CCAB003DD162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MicMuter/MicMuter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JN659VVZPZ;
+				INFOPLIST_FILE = "$(SRCROOT)/MicMuter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aelptos.MicMuter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AF25FE82084CCAA003DD162 /* Build configuration list for PBXProject "MicMuter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF25FF92084CCAB003DD162 /* Debug */,
+				0AF25FFA2084CCAB003DD162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AF25FFB2084CCAB003DD162 /* Build configuration list for PBXNativeTarget "MicMuter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF25FFC2084CCAB003DD162 /* Debug */,
+				0AF25FFD2084CCAB003DD162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AF25FE52084CCAA003DD162 /* Project object */;
+}

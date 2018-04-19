@@ -1,0 +1,4 @@
+"about_action" = "À propos";
+"about_text" = "© Aelptos 2018\n\nIcônes par https://fontawesome.com\nSupport de https://stackoverflow.com ❤️";
+"quit_action" = "Quitter";
+"version_format" = "Version %@ (%@)";

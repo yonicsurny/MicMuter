@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MicMuter" customModuleProvider="target">
+            <connections>
+                <outlet property="aboutWindow" destination="spo-YS-Fqr" id="gpg-4a-e3Z"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="spo-YS-Fqr" userLabel="Window - About" customClass="AboutWindow" customModule="MicMuter" customModuleProvider="target">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="131" y="158" width="390" height="154"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <view key="contentView" focusRingType="none" id="HuB-SY-cjY">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="154"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DtK-Oc-57P">
+                        <rect key="frame" x="20" y="37" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="B0e-OH-KQN"/>
+                            <constraint firstAttribute="width" secondItem="DtK-Oc-57P" secondAttribute="height" multiplier="1:1" id="z5T-MF-ytS"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Icon" id="mku-zN-yZ3"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="w4M-qx-GQC" userLabel="Label - Title">
+                        <rect key="frame" x="118" y="118" width="254" height="36"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="MicMuter" id="9Rd-c9-nYp">
+                            <font key="font" size="30" name=".AppleSystemUIFontLight"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dJf-f2-wxe" userLabel="Label - Version">
+                        <rect key="frame" x="118" y="100" width="254" height="14"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version 1.0.0 (1000)" id="pB5-5d-bMw">
+                            <font key="font" metaFont="toolTip"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" verticalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="K9c-S1-vsM">
+                        <rect key="frame" x="120" y="20" width="250" height="60"/>
+                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Ehy-04-6iA">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="60"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" linkDetection="YES" dataDetection="YES" dashSubstitution="YES" smartInsertDelete="YES" id="wuJ-od-Z9A" userLabel="Text View - Credits">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="textColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <size key="minSize" width="250" height="60"/>
+                                    <size key="maxSize" width="463" height="10000000"/>
+                                    <attributedString key="textStorage">
+                                        <fragment content="Credits">
+                                            <attributes>
+                                                <color key="NSColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </clipView>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="lZB-gS-x9B"/>
+                        </constraints>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="IHj-um-GYM">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="PGZ-LA-rrc">
+                            <rect key="frame" x="234" y="0.0" width="16" height="60"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dJf-f2-wxe" firstAttribute="trailing" secondItem="w4M-qx-GQC" secondAttribute="trailing" id="4QB-qI-uOu"/>
+                    <constraint firstItem="K9c-S1-vsM" firstAttribute="trailing" secondItem="w4M-qx-GQC" secondAttribute="trailing" id="4Tb-S1-Rw8"/>
+                    <constraint firstItem="dJf-f2-wxe" firstAttribute="top" secondItem="w4M-qx-GQC" secondAttribute="bottom" constant="4" id="6E5-L8-y5h"/>
+                    <constraint firstItem="DtK-Oc-57P" firstAttribute="centerY" secondItem="HuB-SY-cjY" secondAttribute="centerY" id="9te-rb-m8X"/>
+                    <constraint firstItem="w4M-qx-GQC" firstAttribute="top" secondItem="HuB-SY-cjY" secondAttribute="top" id="Jh8-rk-Dyh"/>
+                    <constraint firstItem="dJf-f2-wxe" firstAttribute="leading" secondItem="w4M-qx-GQC" secondAttribute="leading" id="N82-YV-E9Z"/>
+                    <constraint firstItem="K9c-S1-vsM" firstAttribute="leading" secondItem="w4M-qx-GQC" secondAttribute="leading" id="OSR-Wc-N26"/>
+                    <constraint firstItem="K9c-S1-vsM" firstAttribute="top" secondItem="dJf-f2-wxe" secondAttribute="bottom" constant="20" id="Rh6-wj-PgS"/>
+                    <constraint firstItem="DtK-Oc-57P" firstAttribute="leading" secondItem="HuB-SY-cjY" secondAttribute="leading" constant="20" id="bTa-6z-j77"/>
+                    <constraint firstAttribute="bottom" secondItem="K9c-S1-vsM" secondAttribute="bottom" constant="20" symbolic="YES" id="mwN-ee-CIV"/>
+                    <constraint firstItem="w4M-qx-GQC" firstAttribute="leading" secondItem="DtK-Oc-57P" secondAttribute="trailing" constant="20" id="nGw-gL-JBU"/>
+                    <constraint firstAttribute="trailing" secondItem="w4M-qx-GQC" secondAttribute="trailing" constant="20" symbolic="YES" id="vyw-8S-0Rs"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="textFieldName" destination="w4M-qx-GQC" id="byC-hV-fYu"/>
+                <outlet property="textFieldVersion" destination="dJf-f2-wxe" id="cdc-Lo-NEf"/>
+                <outlet property="textViewCredits" destination="wuJ-od-Z9A" id="AZG-Pp-acN"/>
+            </connections>
+            <point key="canvasLocation" x="147" y="413"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="Icon" width="128" height="128"/>
+    </resources>
+</document>
